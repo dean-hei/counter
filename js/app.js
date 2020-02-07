@@ -15,7 +15,7 @@ plusButton.addEventListener("click", function(e){
     }
 });
 minusButton.addEventListener("click", function(e){
-    numDisplayed -= inputBox.value;
+    numDisplayed -= parseInt(inputBox.value, 10);
     numDisplay.innerText = numDisplayed;
     if (numDisplayed < 0){
         numDisplay.style.color = "red";

@@ -28,6 +28,7 @@ button:hover {
 input {
     width: 93px;
     padding: 20px;
+    padding-left: 40px;
     color: black;
     background: white;
     border: 2px solid gray;
