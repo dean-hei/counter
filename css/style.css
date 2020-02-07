@@ -1,0 +1,37 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Geneva;
+}
+h1 {
+    font-weight: 900;
+}
+main {
+    margin: 0 auto;
+    text-align: center;
+}
+button {
+    width: 38px;
+    padding: 10px;
+    color: white;
+    background: gray;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+button:hover {
+    color: gray;
+    background: white;
+}
+
+input {
+    width: 38px;
+    padding: 10px;
+    color: black;
+    background: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+}
