@@ -9,7 +9,6 @@ let numDisplayed = 0;
 
 plusButton.addEventListener("click", function(e){
     numDisplayed += parseInt(inputBox.value, 10);
-    console.log(numDisplay.innerText, numDisplay);
     numDisplay.innerText = numDisplayed;
     if (numDisplayed >= 0){
         numDisplay.style.color = "black";
