@@ -8,16 +8,20 @@ let inputBox = document.querySelector("input");
 let numDisplayed = 0;
 
 plusButton.addEventListener("click", function(e){
-    numDisplayed += parseInt(inputBox.value, 10);
-    numDisplay.innerText = numDisplayed;
-    if (numDisplayed >= 0){
-        numDisplay.style.color = "black";
+    if (!isNaN(parseInt(inputBox.value, 10))){
+        numDisplayed += parseInt(inputBox.value, 10);
+        numDisplay.innerText = numDisplayed;
+        if (numDisplayed >= 0){
+            numDisplay.style.color = "black";
+        }
     }
 });
 minusButton.addEventListener("click", function(e){
-    numDisplayed -= parseInt(inputBox.value, 10);
-    numDisplay.innerText = numDisplayed;
-    if (numDisplayed < 0){
-        numDisplay.style.color = "red";
+    if (!isNaN(parseInt(inputBox.value, 10))){
+        numDisplayed -= parseInt(inputBox.value, 10);
+        numDisplay.innerText = numDisplayed;
+        if (numDisplayed < 0){
+            numDisplay.style.color = "red";
+        }
     }
 });
